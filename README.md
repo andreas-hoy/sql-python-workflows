@@ -1,4 +1,4 @@
-# DACA Portfolio — [Your name]
+# DACA Portfolio — [Andreas Hoy]
 
 ## About me
 [I am a climatologist and build my own tool fusing real-time weather and long-term climate. While AI is great for progressing fast in this endeavor, I would like to understand some of the basics behind better.]
