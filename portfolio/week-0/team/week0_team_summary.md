@@ -1,27 +1,27 @@
-# Week 0 Team Work
+# Week 0 Team Work: Infrastructure & Workflow Validation
 
 ## Team
 Executive Reporting
 
-## My role
-NotebookLM Coordinator
+## My Role
+AI Integration & Documentation Lead (NotebookLM Coordinator)
 
-## My contribution
-I created the team's shared NotebookLM notebook, uploaded the four core reference sources, generated an Audio Overview, asked source-grounded questions, and shared the notebook with the team.
+## My Contribution
+I provisioned the team's shared NotebookLM workspace, ingested the four core reference sources, and generated an Audio Overview to validate the model's synthesis capabilities. I subsequently executed source-grounded queries to verify context retention before deploying the notebook to the wider team.
 
-## Shared team systems
-- GitHub: [add team repo link]
-- Supabase: [add team Supabase link]
-- NotebookLM: https://notebook.google.com/notebook/549816ff-01a9-47f6-a837-862d47157426
+## Shared Team Systems
+- **GitHub:** [add team repo link]
+- **Supabase:** [add team Supabase link]
+- **NotebookLM:** https://notebook.google.com/notebook/549816ff-01a9-47f6-a837-862d47157426
 
-## Team outcome
-Our team connected GitHub, Supabase, NotebookLM and the Team Charter into one shared Week 0 workflow.
+## Team Outcome
+Our team successfully orchestrated a reproducible, end-to-end analytical infrastructure by integrating GitHub, Supabase, NotebookLM, and our Team Charter into a unified collaborative workflow.
 
-## Biggest surprise
-That quite many separate tools need to work together even for a very small analytical workflow. (Probably, once connected, the same work becomes much easier for another person to inspect and reproduce.)
+## Architectural Observation ("Biggest Surprise")
+The initial degree of fragmentation across the modern data toolchain (requiring separate configurations for cloud databases, IDEs, version control, and AI). However, once structurally integrated, this modular architecture drastically reduces friction for peer inspection and analytical reproducibility.
 
-## Recommendation to Toomas
-Use a shared, version-controlled workflow where data, queries, documentation and team agreements can all be reviewed by others instead of being kept in separate personal files.
+## Strategic Recommendation to Toomas (Management)
+Mandate a centralized, version-controlled pipeline across the organization. Siloed local data and disparate personal files pose a critical risk to data integrity. A shared architecture ensures that data, queries, documentation, and team protocols remain transparent, reproducible, and auditable by all stakeholders.
 
-## Missing data
-The Week 0 team_members data is fictional practice data, so we cannot draw conclusions about UrbanStyle. ltd's real business performance.
+## Data Limitations ("Missing Data")
+The current `team_members` dataset is purely synthetic ("dummy data") utilized strictly for pipeline and infrastructure validation. It holds no analytical validity and cannot support operational conclusions regarding UrbanStyle.ltd's actual business performance.
