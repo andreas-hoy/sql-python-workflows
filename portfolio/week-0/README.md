@@ -1,51 +1,38 @@
-# Week 0 Portfolio Evidence
+# Week 0: Environment Setup & Pipeline Validation
 
-## Individual setup
+## Objective
+Establish and validate the foundational data engineering pipeline connecting cloud databases (Supabase), local IDEs (VS Code), version control (GitHub), and LLM-assisted documentation (NotebookLM). 
 
-In Week 0, I created a small end-to-end analytical workflow using Supabase, VS Code, SQLTools and GitHub.
+To ensure pipeline stability before ingesting more complex datasets, all initial configuration tests were performed using a synthetic corporate dataset (`UrbanStyle.ltd`).
 
-The `team_members` table contains fictional UrbanStyle.ltd team members together with my own practice row.
+## Individual Evidence: Database Synchronization
 
-I used the following query to inspect the table:
+I validated the end-to-end connection between the Supabase cloud environment and my local SQL tools. The following verification query was used to test data retrieval and table structure:
 
 ```sql
 SELECT id, name, role, week, joined_at
 FROM team_members
 ORDER BY id;
 
-The query returns the practice records in a stable order by id.
+Result Validation: The query executed successfully across Supabase, VS Code, and SQLTools, returning identical, stable records. This confirms that the local-to-cloud synchronization is operational.
 
-I checked that the same records appear when I query the table through VS Code and SQLTools as when I view them in Supabase.
+System Limitation Note: The team_members dataset is purely synthetic ("dummy data") used strictly for infrastructure testing. It holds no analytical value for actual data assessments.
 
-Limitation
+Screenshots of the verified SQL execution are archived in the individual/ folder.
 
-The team_members table contains only fictional practice data. It cannot support conclusions about UrbanStyle.ltd's real sales, customers, revenue, profitability or overall business performance.
 
-Individual evidence
 
-Screenshots of my Week 0 setup and query results are stored in:
+## Group Work: Collaborative Infrastructure
 
-individual/
+**Team:** Executive Reporting  
+**Role:** AI Integration & Documentation Lead (NotebookLM Coordinator)
 
-Group work
-Team
+**Contribution:** 
+To optimize our team's research and collaborative efficiency, I established our LLM-assisted workflow. I initialized the shared NotebookLM environment, ingested the four core project reference sources, and generated an Audio Overview to validate the model's synthesis capabilities. Furthermore, I executed source-grounded queries to verify context retention and accuracy before provisioning access to the wider team.
 
-Executive Reporting
+**Team Evidence:** 
+The synthesized Week 0 team documentation is archived here:  
+[`team/week0_team_summary.md`](team/week0_team_summary.md)
 
-My role
-
-NotebookLM Coordinator
-
-My contribution
-
-I created the team's shared NotebookLM notebook, uploaded the four core reference sources, generated an Audio Overview, asked source-grounded questions, and shared the notebook with the team.
-
-Team evidence
-
-The Week 0 team summary is stored here:
-
-team/week0_team_summary.md
-
-Week 0 outcome
-
-By the end of Week 0, I had a repeatable workflow connecting practice data in Supabase, SQL in VS Code, version history in GitHub, and source-grounded AI support in NotebookLM.
+**Week 0 Outcome:** 
+By the end of Week 0, I had successfully orchestrated a reproducible, end-to-end operational workflow. The architecture seamlessly integrates cloud-hosted synthetic practice data (Supabase), local query execution (VS Code / SQL), rigorous version control (GitHub), and LLM-assisted knowledge management (NotebookLM).
