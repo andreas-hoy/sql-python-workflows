@@ -1,24 +1,26 @@
-## Week 1 Team Work: Macro Data Landscape & Quality Audit
+# Week 1 Team Work: Macro Data Landscape
+
 **Team:** Executive Reporting  
 **Stakeholder Focus:** Toomas Kask (Management)  
 
-### Data Landscape & Profiling
-Our team conducted a structural audit across four core business domains to establish a data quality baseline:
+## Data Landscape & Initial Findings
 
-- **Sales (Transactions):** 15,234 records across 12 columns. 
-  *Anomalies detected:* Identified critical violations of business logic (e.g., negative `total_price` values despite positive `unit_price` inputs) and referential gaps (1,487 records lacking `customer_id` keys).
-- **Customers:** 3,150 records across 9 columns. 
-  *Anomalies detected:* Entity resolution vulnerabilities, including inconsistent geospatial logging (city names), incomplete contact fields (380 missing emails), and deterministic duplication risks (at least 130 records share identical email addresses).
-- **Products:** 362 records across 10 columns. 
-  *Anomalies detected:* The catalog spans multiple categories with prices ranging from a baseline of €14.53 up to €434.08 (*Õhuline sünteetiline sporditossud*). 
-- **Sales (Channels/Locations):** Bimodal distribution across 2 unique channels (`online` and `pood`). 
-  *Anomalies detected:* A comprehensive spatial mapping of physical store locations is currently missing from the consolidated schema.
+Our team used basic SQL queries across four core tables to understand the dataset and identify initial data quality questions:
 
-### Architectural Observation ("Biggest Surprise")
-The structural audit revealed systemic data-quality vulnerabilities across the entire database topology (negative transactional values, referential gaps, and unnormalized geospatial entries). In a production environment, utilizing this raw data without robust upstream sanitization would fundamentally compromise the integrity of any downstream analytical reporting.
+- **Sales (Transactions):** 15,234 rows across 12 columns. 
+  *Findings:* We identified some transactions with negative `total_price` values (despite positive unit prices) and found 1,487 rows missing a `customer_id`.
+- **Customers:** 3,150 rows across 9 columns. 
+  *Findings:* City names are logged inconsistently, 380 customers are missing email addresses, and at least 130 records share an email address with another record (suggesting possible duplicates).
+- **Products:** 362 rows across 10 columns. 
+  *Findings:* Products span multiple categories, with prices ranging from €14.53 up to €434.08. 
+- **Sales (Channels/Locations):** Sales are split between 2 channels (`online` and `pood`). 
+  *Findings:* A confirmed, complete list of physical store locations is currently missing from the dataset.
 
-### Strategic Recommendation to Toomas (Management)
-Suspend macro-level financial or marketing reporting utilizing this raw dataset. Before executing advanced business aggregations, Management must define the business logic for these edge cases (e.g., whether negative sales represent valid returns or data-entry errors) and authorize a systematic data-cleansing pipeline to enforce entity resolution and referential integrity.
+## Biggest Surprise
+The sheer number of data-quality questions that immediately surfaced in a seemingly standard dataset—ranging from negative sales values to missing IDs and inconsistent city names.
 
-### Identified Data Blind Spots ("Missing Data")
-The current schema lacks essential documentation defining the treatment of negative sales, lacks referential mapping for 1,487 "guest" transactions, lacks email vectors for 380 customers, and lacks a definitive spatial registry for physical store locations.
+## Recommendation to Toomas (Management)
+Clarify the business rules behind these data anomalies (e.g., are negative sales valid refunds or errors?) before relying on this dataset for detailed financial or marketing reporting. 
+
+## Missing Data
+We currently lack the business context for the negative sales values, the customer links for 1,487 "guest" transactions, email information for 380 customers, and a definitive registry of physical store locations.
