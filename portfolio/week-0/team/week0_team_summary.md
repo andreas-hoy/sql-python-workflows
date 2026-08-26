@@ -10,8 +10,8 @@ AI Integration & Documentation Lead (NotebookLM Coordinator)
 I provisioned the team's shared NotebookLM workspace, ingested the four core reference sources, and generated an Audio Overview to validate the model's synthesis capabilities. I subsequently executed source-grounded queries to verify context retention before deploying the notebook to the wider team.
 
 ## Shared Team Systems
-- **GitHub:** [add team repo link]
-- **Supabase:** [add team Supabase link]
+- **GitHub:** https://github.com/fatimarahimi/urbanstyle-executive-reporting
+- **Supabase:** https://kopndhwxxvtcflwllgba.supabase.co
 - **NotebookLM:** https://notebook.google.com/notebook/549816ff-01a9-47f6-a837-862d47157426
 
 ## Team Outcome
