@@ -15,7 +15,7 @@ While AtmoPulse currently runs locally via Python (xarray, Streamlit), I am usin
 |:---:|---|---|---|
 | **0** | Environment Setup | Git branching, VS Code configuration, Supabase connection | Completed |
 | **1** | SQL Basics & Exploration | Translating flat-file data extraction into SQL queries | Completed |
-| **2** | Data Cleaning & Modification | Automated data cleansing using SQL | Upcoming |
+| **2** | Data Cleaning & Modification | Automated data cleansing using SQL | Completed |
 | **3** | Relational Data Mapping | Multi-source data joins and table relationships | Upcoming |
 | **4** | Advanced SQL Aggregations | Time-series analytics via CTEs and Window Functions | Upcoming |
 | **5** | Dashboarding Basics | Optimizing data-ink ratios and UI/UX for non-scientists | Upcoming |
