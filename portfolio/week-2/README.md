@@ -15,7 +15,7 @@ Prioritize the validated removal of duplicate rows, as repeated invoice records 
 ## Team Integration
 The team combined the isolated sales, customer, and product audits into a unified Week 2 data-quality summary for stakeholder review.
 
-**Team summary:** [link must be added]
+**Team summary:** [Week 2 Team Cleaning Report](team/week2_team_cleaning_report.md)
 
 ## Core Working Principle
 **Test copy -> diagnose -> verify -> document -> only then fix.**
