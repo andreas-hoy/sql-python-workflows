@@ -14,7 +14,7 @@ Prioritise retention and targeted campaigns for VIP customers, while using the R
 ## Team Integration
 The team combined sales, customer segmentation, inventory/category analysis, and marketing-channel analysis into a shared Week 4 aggregation summary for Anna Mets and Kristi Tamm.
 
-**Team summary:** [add the actual Week 4 team file/link here]
+**Team summary:** (https://notebook.google.com/notebook/549816ff-01a9-47f6-a837-862d47157426/artifact/4d092cf6-a90f-4dcd-837a-5eed84b52b30?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_)
 
 ## AI use
 I used ChatGPT to help structure and validate the SQL queries, test whether the chosen segmentation thresholds were reasonable, and check that the aggregation logic matched the intended business metrics.
